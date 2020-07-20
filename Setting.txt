@@ -1,0 +1,46 @@
+####Caution####
+All file names (ex. DataBase file) must not include space. Use "_" or "-" instead of space.
+###############
+
+#The name of DataBase file (FASTA format) in "DataBase" directory.
+DB = MiFish_DB.fas
+
+#Primer setting
+Primers = Primers.txt	#File name (the file need to be in "DataBase" directory). If you use run files that have already trimmed primer region, set "Primers = No".
+MaxDiff = length	#Max allowing differences within primer region. If you set "MaxDiff = length", primer region are trimmed by merely primer length
+Divide = No		#Yes or No, When you select "Yes", run file will be divided to multiple files by each primer pairs if reads were amplified by multiple primer pairs.
+
+#Rarefaction 
+(Downsize to _______ reads each samples. If you use "Rarefaction = MIN", the number is set to the minimum reads among samples. If you don't use this option, "Rarefaction = NO".)
+Rarefaction = No
+Timing = 2 (1:After Quallity filter, 2:After Denoise)
+
+#Length Filter (Discard reads less than __ bp)
+Length = 50
+
+#Depth Filter (Discard unique sequences less than __ replicates)
+Depth = 4		#This option can set percentage (ex. If you set "Depth = 1%", sequences less than the (0.01 x total reads after Find_unique) replicates are discarded.)
+
+#Correction of error reads at denoise step (YES or NO. if you select "NO", the error reads are discarded) 
+Correct_error = Yes
+
+#Upper cut line of Homology Search (%)
+UIdentity = 97
+
+#Lower cut line of Homology Search (%)
+LIdentity = 80
+
+#Dictionary for common name (if the dictionary isn't, "Dictionary = No".)
+Dictionary = Sname_Jname.txt
+
+#Dictionary for family name (if the dictionary isn't, "Family = No".)
+Family = Family_name.txt
+
+#Construction of Phylogenetic trees for each Family (YES or NO)
+Phylogenetic = No
+
+#Deletion of temoporary file (YES or NO)
+Temporary = YES
+
+#Compression of fastq file to gz file after analyzing (YES or NO)
+Compress = NO

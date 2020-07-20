@@ -1,0 +1,27 @@
+#Primer pairs (Forward and Reverse) need to be the same name
+#Primer name can not use space. Use "_" or "-" instead of space
+#If a user put "#" at beginning of line, the primer would be used in the analysis
+
+Forward primers
+>MiFish-Unity
+NNNNNNGYYGGTAAAWCTCGTGCCAGC
+#>MiFish-U
+#NNNNNNGTCGGTAAAACTCGTGCCAGC
+#>MiFish-E-v2
+#NNNNNNRGTTGGTAAATCTCGTGCCAGC
+#>MiFish-U2
+#NNNNNNGCCGGTAAAACTCGTGCCAGC
+#>MiDeca
+#NNNNNNGGACGATAAGACCCTATAAA
+
+Reverse primers
+>MiFish-Unity
+NNNNNNCATAGKRGGGTRTCTAATCCYMGTTTG
+#>MiFish-U
+#NNNNNNCATAGTGGGGTATCTAATCCCAGTTTG
+#>MiFish-E-v2
+#NNNNNNGCATAGTGGGGTATCTAATCCTAGTTTG
+#>MiFish-U2
+#NNNNNNCATAGGAGGGTGTCTAATCCCCGTTTG
+#>MiDeca
+#ACGCTGTTATCCCTAAAGT
